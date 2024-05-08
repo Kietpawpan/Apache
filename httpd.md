@@ -15,6 +15,9 @@ graph TD;
     Edit-->New;
     New-->TypeThePath;
 ```
+6. Open cmd and type php-v and press Enter.
+7. Open the file C:Apache24\conf\httpd
+8. Add this code:
 ```
 #PHP configuration
 LoadModule php7_module "c:/php7.2/php7apache2_4.dll"
@@ -22,6 +25,7 @@ AddHandler application/x-httpd-php .php
 AddType application/x-httpd-php .php .html
 PHPIniDir "c:/php7"
 ```
+9. Open the Service program, to stop and start Apache2.4.
 
 ## To install SSL Certificate
 1. Add the SSL Cert files in the folder: C:Apache24/conf/ssl
