@@ -4,11 +4,17 @@
 3. Create a new folder in Drive C:, named PHP7.2
 4. Upzip the zip file and put all the extracted files in the folder PHP7.2
 5. Set Environment Variable for the path C:\PHP7.2
-```mermaid
-Tree DT
-A--B
-```
 
+```mermaid
+graph TD;
+    ControlPanel-->SystemAndSecure;
+    SystemAndSecure-->System;
+    System-->AdvanceSystemSetting;
+    AdvanceSystemSetting-->EnvironmentVariables;
+    EnvironmentVariables-->Edit;
+    Edit-->New;
+    New-->TypeThePath;
+```
 ```
 #PHP configuration
 LoadModule php7_module "c:/php7.2/php7apache2_4.dll"
