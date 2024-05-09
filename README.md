@@ -1,6 +1,7 @@
-# Prevent Indexes of
-1. Open the conf/httpd.conf
-2. Add this code
+# Prevent Indexes of 
+Disable directory browsing as follows:
+1. Open the Apche24/conf/httpd.conf
+2. Add this code in it.
 
 ```
 DocumentRoot "${SRVROOT}/htdocs"
@@ -10,7 +11,8 @@ DocumentRoot "${SRVROOT}/htdocs"
 	Require all granted
 </Directory>
 ```
-3. Stop and start Apache2.4
+3. Save it.
+4. Stop and start Apache2.4
 
 # Install PHP in Apache for Windows 2019
 1. Visit [windows.php.net](https://windows.php.net/)
