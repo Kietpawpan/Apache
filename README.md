@@ -6,8 +6,10 @@
 5. Set the __Environment Variable__ for the path `C:\PHP7.2`
 
 ```mermaid
-graph TD;
-direction LR;
+
+flowchart TD
+subgraph Z[" "]
+direction LR
     ControlPanel-->SystemAndSecure;
     SystemAndSecure-->System;
     System-->AdvanceSystemSetting;
@@ -15,6 +17,7 @@ direction LR;
     EnvironmentVariables-->Edit;
     Edit-->New;
     New-->TypeThePath;
+end
 ```
 6. Open cmd and type php-v and press Enter.
 7. Open the file C:Apache24\conf\httpd
