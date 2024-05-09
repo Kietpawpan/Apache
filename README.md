@@ -1,5 +1,5 @@
 # To install PHP in Apache for Windows 2019
-1. Visit windows.php.net
+1. Visit [windows.php.net](https://windows.php.net/)
 2. Download php-7.2.22-Win32-VC15-x64.zip
 3. Create a new folder in Drive C:, named PHP7.2
 4. Upzip the zip file and put all the extracted files in the folder PHP7.2
