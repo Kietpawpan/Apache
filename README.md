@@ -14,6 +14,7 @@ DocumentRoot "${SRVROOT}/htdocs"
 3. Save it.
 4. Stop and start Apache2.4
 Result:
+
 ![img](https://kietpawpn.github.io/Apache/img/01.jpeg)
 
 # Install PHP in Apache for Windows 2019
