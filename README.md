@@ -7,6 +7,7 @@
 
 ```mermaid
 graph TD;
+direction LR;
     ControlPanel-->SystemAndSecure;
     SystemAndSecure-->System;
     System-->AdvanceSystemSetting;
