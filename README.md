@@ -10,7 +10,7 @@
 flowchart TD
 subgraph Z[" "]
 direction LR
-    ControlPanel-->SystemAndSecure;
+    ControlPanel-->"System And Secure";
     SystemAndSecure-->System;
     System-->AdvanceSystemSetting;
     AdvanceSystemSetting-->EnvironmentVariables;
