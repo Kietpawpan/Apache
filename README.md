@@ -29,7 +29,16 @@ AddHandler application/x-httpd-php .php
 AddType application/x-httpd-php .php .html
 PHPIniDir "c:/php7"
 ```
-9. Open `Service`, the program for starts, stops, and configures Windows services. Click __Apache2.4__. Click `stop`, wait, and click `start`. 
+9. Open `Service`, the program for starts, stops, and configures Windows services. Click __Apache2.4__. Click `stop`, wait, and click `start`.
+10. Open `Server Manager` and click `Manage` on the menu.
+```mermaid
+
+flowchart TD
+subgraph Z[" "]
+direction LR
+    Add_Rules_and_Features-->Next--B;
+end
+```
 
 ## How to install SSL Certificates
 1. Get the `SSL Certificate` from CA, _e.g._, [ZeroSSL.com](https://app.zerossl.com/signup/free)
