@@ -19,8 +19,8 @@ direction LR
     New-->TypeThePath;
 end
 ```
-6. Open cmd and type php-v and press Enter.
-7. Open the file C:Apache24\conf\httpd
+6. Open __Windows Command Line__ (`cmd.exe`) and type `php-v` and press `Enter`.
+7. Open the file __C:Apache24\conf\httpd__
 8. Add this code:
 ```
 #PHP configuration
@@ -29,7 +29,7 @@ AddHandler application/x-httpd-php .php
 AddType application/x-httpd-php .php .html
 PHPIniDir "c:/php7"
 ```
-9. Open the Service program, to stop and start Apache2.4.
+9. Open the `Service` windows, to `stop` and `start` __Apache2.4__.
 
 ## To install SSL Certificate
 1. Add the SSL Cert files in the folder: C:Apache24/conf/ssl
