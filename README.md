@@ -40,6 +40,24 @@ direction LR
     then-->Application_Development-->Check_CGI;
 end
 ```
+11. Open cdm.exe, then stop and start Apache24.
+12. Open Server Manager. Click Tool, click Internet Information Service(IIS) Manage. Then click ESC-4E59.
+13. Double clicks `Handler Mapping`.
+14. Click `Add Managed Handler`.
+15. Edit Module Mapping:
+```
+Request Path
+*php
+
+Module
+FastCgiModule
+
+Excutable
+C:\PHP7.2\php-cgi.exe
+
+Name
+PHP
+```
 
 ## How to install SSL Certificates
 1. Get the `SSL Certificate` from CA, _e.g._, [ZeroSSL.com](https://app.zerossl.com/signup/free)
