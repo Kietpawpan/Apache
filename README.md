@@ -1,6 +1,6 @@
 # Prevent Indexes of 
 Disable directory browsing as follows:
-1. Open the Apche24/conf/httpd.conf
+1. Open `httpd.conf`, at Apache24/conf/httpd.conf
 2. Add this code in it.
 
 ```
