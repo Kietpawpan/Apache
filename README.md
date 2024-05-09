@@ -29,7 +29,7 @@ AddHandler application/x-httpd-php .php
 AddType application/x-httpd-php .php .html
 PHPIniDir "c:/php7"
 ```
-9. Open the `Service` windows, to `stop` and `start` __Apache2.4__.
+9. Open `Service`, the program for starts, stops, and configures Windows services. Click __Apache2.4__. Click `stop`, wait, and click `start`. 
 
 ## To install SSL Certificate
 1. Add the SSL Cert files in the folder: C:Apache24/conf/ssl
