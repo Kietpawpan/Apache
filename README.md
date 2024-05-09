@@ -32,9 +32,15 @@ PHPIniDir "c:/php7"
 9. Open `Service`, the program for starts, stops, and configures Windows services. Click __Apache2.4__. Click `stop`, wait, and click `start`. 
 
 ## How to install SSL Certificates
-1. Get the SSL Certificate from CA, e.g., [ZeroSSL.com](https://app.zerossl.com/signup/free)
-2. Add the SSL Cert files in the folder: C:Apache24/conf/ssl
-3. Open the file C:/Apache24/conf/extra/httpd-ssl, and add these codes:
+1. Get the `SSL Certificate` from CA, _e.g._, [ZeroSSL.com](https://app.zerossl.com/signup/free)
+>[!NOTE]
+>SSL Certificates are 3 files to be installed in Apache's ssl folder:
+>certificate.crt
+>private.key
+>ca_bundle.crt
+
+3. Add the SSL Cert files in the folder: C:Apache24/conf/ssl
+4. Open the file C:/Apache24/conf/extra/httpd-ssl, and add these codes:
 ```
 SSLCertificateFile "${SRVROOT}/conf/ssl/certificate.crt"
 SSLCertificateKeyFile "${SRVROOT}/conf/ssl/private.key"
