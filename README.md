@@ -35,9 +35,9 @@ PHPIniDir "c:/php7"
 1. Get the `SSL Certificate` from CA, _e.g._, [ZeroSSL.com](https://app.zerossl.com/signup/free)
 >[!NOTE]
 >_SSL Certificates are 3 files to be installed in Apache's ssl folder:
->certificate.crt
->private.key
->ca_bundle.crt_
+>- certificate.crt
+>- private.key
+>- ca_bundle.crt_
 
 3. Add the SSL Cert files in the folder: C:Apache24/conf/ssl
 4. Open the file C:/Apache24/conf/extra/httpd-ssl, and add these codes:
