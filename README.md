@@ -1,4 +1,4 @@
-# To install PHP in Apache for Windows 2019
+# How to install PHP in Apache for Windows 2019
 1. Visit [windows.php.net](https://windows.php.net/)
 2. Download [php-7.2.22-Win32-VC15-x64.zip](https://windows.php.net/downloads/releases/archives/php-7.2.22-Win32-VC15-x64.zip)
 3. Create a new folder in Drive C:, named `PHP7.2`
@@ -31,12 +31,13 @@ PHPIniDir "c:/php7"
 ```
 9. Open `Service`, the program for starts, stops, and configures Windows services. Click __Apache2.4__. Click `stop`, wait, and click `start`. 
 
-## To install SSL Certificate
-1. Add the SSL Cert files in the folder: C:Apache24/conf/ssl
-2. Open the file C:/Apache24/conf/extra/httpd-ssl, and add these codes:
+## How to install SSL Certificates
+1. Get the SSL Certificate from CA, e.g., [ZeroSSL.com](https://app.zerossl.com/signup/free)
+2. Add the SSL Cert files in the folder: C:Apache24/conf/ssl
+3. Open the file C:/Apache24/conf/extra/httpd-ssl, and add these codes:
 ```
 SSLCertificateFile "${SRVROOT}/conf/ssl/certificate.crt"
 SSLCertificateKeyFile "${SRVROOT}/conf/ssl/private.key"
 SSLCertificateChainFile "${SRVROOT}/conf/ssl/ca_bundle.crt"
 ```
-3. Open the Service program, stop and then start Apache2.4
+4. Open the Service program, stop and then start Apache2.4
