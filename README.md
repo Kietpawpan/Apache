@@ -1,6 +1,6 @@
 # Prevent Indexes of 
 Disable directory browsing as follows:
-1. Open `httpd.conf`, at Apache24/conf/httpd.conf
+1. Open `httpd.conf`, at _Apache24/conf/httpd.conf_
 2. Add this code in it.
 
 ```
@@ -12,11 +12,13 @@ DocumentRoot "${SRVROOT}/htdocs"
 </Directory>
 ```
 3. Save it.
-4. Stop and start Apache2.4
+4. Stop and start `Apache2.4`
 
 Result:
 >[!WARNING]
 >![img](https://kietpawpan.github.io/Apache/img/01.jpeg)
+>[!TIP]
+>Always make a copy of httpd.conf as a backup file.
 
 # Install PHP in Apache for Windows 2019
 1. Visit [windows.php.net](https://windows.php.net/)
