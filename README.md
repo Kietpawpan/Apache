@@ -36,7 +36,9 @@ PHPIniDir "c:/php7"
 flowchart TD
 subgraph Z[" "]
 direction LR
-    Add_Rules_and_Features-->Next-->B;
+    Add_Rules_and_Features-->Next-->Select_the_server-->Server_Rules-->Web_Server(IIS);
+end
+    A-->C;
 end
 ```
 
