@@ -17,6 +17,7 @@ DocumentRoot "${SRVROOT}/htdocs"
 Result:
 >[!WARNING]
 >![img](https://kietpawpan.github.io/Apache/img/01.jpeg)
+
 >[!TIP]
 >Always make a copy of httpd.conf as a backup file.
 
