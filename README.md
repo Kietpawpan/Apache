@@ -10,11 +10,11 @@
 flowchart TD
 subgraph Z[" "]
 direction LR
-    ControlPanel-->[System And Secure];
-    SystemAndSecure-->System;
-    System-->AdvanceSystemSetting;
-    AdvanceSystemSetting-->EnvironmentVariables;
-    EnvironmentVariables-->Edit;
+    ControlPanel-->System_And_Secure;
+    System_And_Secure-->System;
+    System-->Advance_System_Setting;
+    Advance_System_Setting-->Environment_Variables;
+    Environment_Variables-->Edit;
     Edit-->New;
     New-->TypeThePath;
 end
