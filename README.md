@@ -15,8 +15,8 @@ DocumentRoot "${SRVROOT}/htdocs"
 4. Stop and start Apache2.4
 
 Result:
->[WARNING]
-> ![img](https://kietpawpan.github.io/Apache/img/01.jpeg)
+>[!WARNING]
+>![img](https://kietpawpan.github.io/Apache/img/01.jpeg)
 
 # Install PHP in Apache for Windows 2019
 1. Visit [windows.php.net](https://windows.php.net/)
