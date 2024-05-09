@@ -1,4 +1,18 @@
-# How to install PHP in Apache for Windows 2019
+# Prevent Indexes of
+1. Open the conf/httpd.conf
+2. Add this code
+
+```
+DocumentRoot "${SRVROOT}/htdocs"
+<Directory "${SRVROOT}/htdocs/*">
+	Options -Indexes +FollowSymLinks
+	AllowOverride None
+	Require all granted
+</Directory>
+```
+3. Stop and start Apache2.4
+
+# Install PHP in Apache for Windows 2019
 1. Visit [windows.php.net](https://windows.php.net/)
 2. Download [php-7.2.22-Win32-VC15-x64.zip](https://windows.php.net/downloads/releases/archives/php-7.2.22-Win32-VC15-x64.zip)
 3. Create a new folder in Drive C:, named `PHP7.2`
