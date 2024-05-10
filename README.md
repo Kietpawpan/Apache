@@ -98,3 +98,49 @@ SSLCertificateKeyFile "${SRVROOT}/conf/ssl/private.key"
 SSLCertificateChainFile "${SRVROOT}/conf/ssl/ca_bundle.crt"
 ```
 4. Open`Services`, to stop and start Apache2.4
+
+## Set index.html at the defualt website folder /dWeb/
+```
+<!DOCTYPE html>
+<html>
+<title>MNRE SLC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body onload="move()";">
+<div class="MNRE SLC">
+<div style="margin:10px 5% 0% 10px;">
+<h2>Connecting to the server</h2>
+
+<div class="w3-light-grey">
+  <div id="myBar" class="w3-container w3-green w3-center" style="width:5px;height:10px;"></div>
+</div>
+<div id="load"></div>
+</div>
+</div>
+<script>
+function move() {
+  var elem = document.getElementById("myBar");   
+  var elem2 = document.getElementById("load");     
+  var width = 20;
+  var id = setInterval(frame, 50);
+  function frame() {
+    if (width >= 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem2.innerHTML = "Loading(" + width * 1  + '%)';
+	  var load = document.getElementById("load").innerHTML;
+	  if(load=="Loading(100%)"){setInterval(loading, 10);}
+    }
+ 
+  }
+function loading(){
+ window.location.replace('https://.....');
+}
+}
+</script>
+
+</body>
+</html> 
+```
