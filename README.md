@@ -19,7 +19,7 @@ Result:
 >![img](https://kietpawpan.github.io/Apache/img/01.jpeg)
 
 >[!TIP]
->Always make a copy of httpd.conf as a backup file, or you may destroy and cannot restore it.
+>Always make a copy of httpd.conf as a backup file, or you may destroy and cannot restore the old version.
 
 # Install PHP in Apache for Windows 2019
 1. Visit [windows.php.net](https://windows.php.net/)
@@ -91,10 +91,10 @@ PHP
 >- ca_bundle.crt
 
 3. Add the SSL Cert files in the `ssl folder`: C:Apache24/conf/ssl
-4. Open the `httpd-ssl` file, at C:/Apache24/conf/extra/httpd-ssl, and insert these codes:
+4. Open the `httpd-ssl` file, at _C:/Apache24/conf/extra/httpd-ssl_, and insert this code:
 ```
 SSLCertificateFile "${SRVROOT}/conf/ssl/certificate.crt"
 SSLCertificateKeyFile "${SRVROOT}/conf/ssl/private.key"
 SSLCertificateChainFile "${SRVROOT}/conf/ssl/ca_bundle.crt"
 ```
-4. Open the `Services` program, stop and start Apache2.4
+4. Open`Services`, to stop and start Apache2.4
