@@ -1,5 +1,5 @@
 # Prevent Indexes of 
-Disable directory browsing as follows:
+To disable directory browsing,
 1. Open `httpd.conf`, at _Apache24/conf/httpd.conf_
 2. Add this code in it.
 
