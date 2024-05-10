@@ -19,7 +19,7 @@ Result:
 >![img](https://kietpawpan.github.io/Apache/img/01.jpeg)
 
 >[!TIP]
->Always make a copy of httpd.conf as a backup file.
+>Always make a copy of httpd.conf as a backup file, or you may destroy and cannot restore it.
 
 # Install PHP in Apache for Windows 2019
 1. Visit [windows.php.net](https://windows.php.net/)
