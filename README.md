@@ -99,7 +99,8 @@ SSLCertificateChainFile "${SRVROOT}/conf/ssl/ca_bundle.crt"
 ```
 4. Open`Services`, to stop and start Apache2.4
 
-## Set index.html at the defualt website folder /dWeb/
+## Set index.html at the default website folder /dWeb/
+Redirect the user to a secure website.
 ```
 <!DOCTYPE html>
 <html>
