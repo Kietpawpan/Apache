@@ -82,7 +82,7 @@ Name
 PHP
 ```
 
-## How to install SSL Certificates
+## Install SSL Certificates
 1. Get the `SSL Certificate` from CA, _e.g._, [ZeroSSL.com](https://app.zerossl.com/signup/free)
 >[!NOTE]
 >SSL Certificates are 3 files to be installed in Apache's __ssl__ folder:
