@@ -100,9 +100,9 @@ SSLCertificateChainFile "${SRVROOT}/conf/ssl/ca_bundle.crt"
 >[!Note]
 >If the file surnames are .pem, change them to .crt or .key correctly. For example,
 ```
-SSLCertificateFile "${SRVROOT}/conf/ssl/CARootCertificate-ca.crt"
+SSLCertificateFile "${SRVROOT}/conf/ssl/STAR_mnre_go_th.crt"
 SSLCertificateKeyFile "${SRVROOT}/conf/ssl/private.key"
-SSLCertificateChainFile "${SRVROOT}/conf/ssl/STAR_mnre_go_th.crt"
+SSLCertificateChainFile "${SRVROOT}/conf/ssl/CARootCertificate-ca.crt"
 ```
 4. Open`Services`, to stop and start Apache2.4
 >[!Note]
