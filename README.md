@@ -97,6 +97,12 @@ SSLCertificateFile "${SRVROOT}/conf/ssl/certificate.crt"
 SSLCertificateKeyFile "${SRVROOT}/conf/ssl/private.key"
 SSLCertificateChainFile "${SRVROOT}/conf/ssl/ca_bundle.crt"
 ```
+>[!Note]
+>If the file surnames are .pem, change them to .crt or .key correctly.
+>SSLCertificateFile "${SRVROOT}/conf/ssl/CARootCertificate-ca.pem"
+>SSLCertificateKeyFile "${SRVROOT}/conf/ssl/private.pem"
+>SSLCertificateChainFile "${SRVROOT}/conf/ssl/STAR_mnre_go_th.pem"
+
 4. Open`Services`, to stop and start Apache2.4
 
 ## Set index.html at the default website folder /dWeb/
