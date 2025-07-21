@@ -98,12 +98,16 @@ SSLCertificateKeyFile "${SRVROOT}/conf/ssl/private.key"
 SSLCertificateChainFile "${SRVROOT}/conf/ssl/ca_bundle.crt"
 ```
 >[!Note]
->If the file surnames are .pem, change them to .crt or .key correctly.
->SSLCertificateFile "${SRVROOT}/conf/ssl/CARootCertificate-ca.pem"
->SSLCertificateKeyFile "${SRVROOT}/conf/ssl/private.pem"
->SSLCertificateChainFile "${SRVROOT}/conf/ssl/STAR_mnre_go_th.pem"
-
+>If the file surnames are .pem, change them to .crt or .key correctly. For example,
+```
+SSLCertificateFile "${SRVROOT}/conf/ssl/CARootCertificate-ca.crt"
+SSLCertificateKeyFile "${SRVROOT}/conf/ssl/private.key"
+SSLCertificateChainFile "${SRVROOT}/conf/ssl/STAR_mnre_go_th.crt"
+```
 4. Open`Services`, to stop and start Apache2.4
+>[!Note]
+>The Service function can be accessed by going to the desktop and searching with the keyword service.  
+
 
 ## Set index.html at the default website folder /dWeb/
 Redirect the user to a secure website.
